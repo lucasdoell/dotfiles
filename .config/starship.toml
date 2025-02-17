@@ -1,0 +1,64 @@
+format = """
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$rust\
+$golang\
+$swift\
+$php\
+$time\
+\n$character"""
+
+[directory]
+style = "yellow"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](green)"
+
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "bright-black"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "cyan"
+format = '[($all_status$ahead_behind )]($style)'
+
+[nodejs]
+symbol = ""
+style = "bright-black"
+format = '[ $symbol ($version) ]($style)'
+
+[rust]
+symbol = ""
+style = "bright-black"
+format = '[ $symbol ($version) ]($style)'
+
+[golang]
+symbol = "ﳑ"
+style = "bright-black"
+format = '[ $symbol ($version) ]($style)'
+
+[swift]
+symbol = ""
+style = "bright-black"
+format = '[ $symbol v5.8.1 ]($style)'
+
+[time]
+disabled = false
+use_12hr = true
+time_format = "%I:%M %p"       # Hour:Minute Format
+style = "bright-black"
+format = '[  $time ]($style)'
