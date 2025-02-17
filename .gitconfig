@@ -1,0 +1,35 @@
+[user]
+	email = lucas@lux.dev
+	name = Lucas Doell
+	signingkey = 3EB11B3F09629AA4
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[core]
+	pager = delta
+	excludesfile = /Users/lucasdoell/.gitignore
+
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+
+[delta]
+    navigate = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+
+[include]
+    path = /Users/lucasdoell/Downloads/themes.gitconfig
+[http]
+	postBuffer = 157286400
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
+[gpg]
+	program = gpg
