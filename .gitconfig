@@ -10,19 +10,24 @@
 [core]
 	pager = delta
 	excludesfile = /Users/lucasdoell/.gitignore
-
+[alias]
+	a = add
+	p = push
+	c = commit -m
+	d = diff
+	st = status -sb
+	co = checkout
+	br = branch
+	last = log -1 HEAD --stat
+	undo = reset --soft HEAD^
 [interactive]
     diffFilter = delta --color-only --features=interactive
-
 [delta]
     navigate = true
-
 [merge]
     conflictstyle = diff3
-
 [diff]
     colorMoved = default
-
 [include]
     path = /Users/lucasdoell/Downloads/themes.gitconfig
 [http]

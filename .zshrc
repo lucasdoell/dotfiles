@@ -10,6 +10,14 @@ alias src=source
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+alias gcm='git checkout main'
+alias gco='git checkout'
+alias gst='git status'
+alias gc='git commit -m' 
+alias gl='git pull'
+alias gp='git push'
+alias gb='git branch'
+
 export VISUAL=nvim
 
 export NVM_DIR="$HOME/.nvm"
