@@ -27,7 +27,11 @@ require("lazy").setup({
         opts = {
             notification = false
         }
+    }, {
+        'echasnovski/mini.surround',
+        version = '*'
     }},
+
     -- Configure any other settings here. See the documentation for more details.
     -- colorscheme that will be used when installing plugins.
     install = {
@@ -39,3 +43,6 @@ require("lazy").setup({
         notify = false
     }
 })
+
+require('mini.surround').setup()
+

@@ -17,6 +17,7 @@ alias gc='git commit -m'
 alias gl='git pull'
 alias gp='git push'
 alias gb='git branch'
+alias gf='git fetch'
 
 export VISUAL=nvim
 
@@ -108,3 +109,6 @@ export GPG_TTY=$(tty)
 # This section can be safely removed at any time if needed.
 [[ ! -r '/Users/lucasdoell/.opam/opam-init/init.zsh' ]] || source '/Users/lucasdoell/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
+
+. "$HOME/.local/bin/env"
+eval "$(uv generate-shell-completion zsh)"
