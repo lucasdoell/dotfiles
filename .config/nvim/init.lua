@@ -1,4 +1,4 @@
 require("config.lazy")
+require("vimopts")
 
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
+require("mini.surround").setup()
