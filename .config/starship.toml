@@ -11,7 +11,7 @@ $time\
 \n$character"""
 
 [directory]
-style = "yellow"
+style = "#FFC799"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
