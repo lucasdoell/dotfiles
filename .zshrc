@@ -5,7 +5,7 @@ alias ptime="cd ~/code/parsertime"
 alias pn=pnpm
 alias python=python3
 alias ls="ls --color"
-alias c="open $1 -a \"Visual Studio Code\""
+alias c="open $1 -a \"Cursor\""
 alias src=source
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
