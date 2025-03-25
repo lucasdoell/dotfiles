@@ -20,6 +20,8 @@ alias gp='git push'
 alias gb='git branch'
 alias gf='git fetch'
 
+alias bisect='dune test --instrument-with bisect_ppx --force; bisect-ppx-report html; open _coverage/index.html'
+
 export VISUAL=nvim
 
 export NVM_DIR="$HOME/.nvm"
