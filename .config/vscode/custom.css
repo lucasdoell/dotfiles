@@ -1,6 +1,6 @@
 /* Command palette text input */
 .quick-input-widget {
-  transform: translateY(-50%) !important;
+  transform: translateY(50%) !important;
   top: 50% !important;
   z-index: 100;
   border: solid 2px #ffffff2d !important;
