@@ -1,5 +1,5 @@
 background: "#000000"
-accent: "#FFC799"
+accent: "#99D0FF"
 foreground: "#ffffff"
 terminal_colors:
   normal:
@@ -8,13 +8,13 @@ terminal_colors:
     black: "#101010"
     red: "#f5a191"
     cyan: "#ea83a5"
-    yellow: "#FFC799"
+    yellow: "#99D0FF"
     magenta: "#e29eca"
     blue: "#aca1cf"
   bright:
     green: "#99FFE4"
     blue: "#b9aeda"
-    yellow: "#FFC799"
+    yellow: "#99D0FF"
     white: "#ffffff"
     magenta: "#ecaad6"
     black: "#7E7E7E"
