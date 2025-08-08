@@ -2,8 +2,6 @@
 	email = lucas@lux.dev
 	name = Lucas Doell
 	signingkey = 3EB11B3F09629AA4
-[includeIf "gitdir:~/cornell/"]
-    path = ~/cornell/.gitconfig
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
@@ -42,3 +40,7 @@
 	program = gpg
 [pull]
 	rebase = true
+[includeIf "gitdir:~/cornell/"]
+    path = ~/cornell/.gitconfig
+[includeIf "gitdir:~/work/"]
+    path = ~/work/.gitconfig
