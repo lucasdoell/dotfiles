@@ -6,3 +6,5 @@
     gpgSign = false
 [core]
     sshCommand = ssh -i ~/.ssh/id_ed25519
+[url "git@github.com:"]
+	insteadof = https://github.com/
